@@ -1,8 +1,6 @@
-/* Font Declarations */
 @import url('https://fonts.cdnfonts.com/css/xeroda');
 @import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
 
-/* Reset and Base Styles */
 :root {
     --primary-color: #e50914;
     --secondary-color: #221f1f;
@@ -52,7 +50,7 @@ button {
     outline: none;
 }
 
-/* 1. Top Navigation Bar */
+/* Top Navigation Bar */
 .navbar {
     position: fixed;
     top: 0;
@@ -178,7 +176,7 @@ button {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* 2. Hero Section */
+/* Hero Section */
 .hero {
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
@@ -244,7 +242,6 @@ button {
     align-items: center;
 }
 
-/* Stylish Play Button */
 .play-button-container {
     position: relative;
     width: 300px;
@@ -338,7 +335,6 @@ button {
     }
 }
 
-/* Remove the old hero-svg animation */
 .hero-svg {
     display: none;
 }
@@ -352,7 +348,7 @@ button {
     }
 }
 
-/* 3. Trending Movies Section */
+/* Trending Movies Section */
 .trending, .shows, .reviews {
     padding: 5rem 5%;
 }
@@ -513,7 +509,7 @@ button {
     overflow: hidden;
 }
 
-/* 4. Popular Shows Section */
+/* Popular Shows Section */
 .show-details {
     position: absolute;
     bottom: 10px;
@@ -553,7 +549,7 @@ button {
     background-color: #f40612;
 }
 
-/* 5. User Reviews Section */
+/* User Reviews Section */
 .reviews-container {
     display: flex;
     flex-wrap: wrap;
@@ -693,7 +689,7 @@ button {
     background-color: #f40612;
 }
 
-/* 6. Footer */
+/* Footer */
 .footer {
     background-color: var(--secondary-color);
     padding: 4rem 5% 2rem;
