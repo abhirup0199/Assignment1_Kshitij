@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeoFlix - Media Discovery Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 1. Top Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="logo">
+        <h1>NeoFlix</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#trending">Trending</a>
+        <a href="#shows">TV Shows</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#" class="btn-signin">Sign In</a>
+      </nav>
+      <div class="hamburger">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="mobile-menu">
+          <a href="#hero">Home</a>
+          <a href="#trending">Trending</a>
+          <a href="#shows">TV Shows</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#" class="btn-signin">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>NeoFlix</h1>
+          <h2>Discover Movies & Shows</h2>
+          <p>Your new favorite streaming platform</p>
+          <a href="#trending" class="btn-primary">Explore Trending Movies</a>
+        </div>
+        <div class="hero-image">
+          <div class="play-button-container">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="play-button-ring"></div>
+            <div class="play-button-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Trending Movies Section -->
+    <section class="trending" id="trending">
+      <div class="section-header">
+        <h2>Trending Movies</h2>
+        <p>Popular picks this week</p>
+      </div>
+      <div class="movie-cards">
+        <!-- Movie Card 1 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg"
+              alt="Avengers: Endgame"
+            />
+            <span class="duration">3h 2m</span>
+            <div class="hover-overlay">
+              <button class="watch-now">Watch Now</button>
+              <label class="watchlist-toggle">
+                <input type="checkbox" />
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3>Avengers: Endgame</h3>
+            <p>
+              The Avengers take a final stand against Thanos in this epic
+              conclusion.
+            </p>
+          </div>
+        </div>
+
+        <!-- Movie Card 2 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg"
+              alt="The Batman"
+            />
+            <span class="duration">2h 56m</span>
+            <div class="hover-overlay">
+              <button class="watch-now">Watch Now</button>
+              <label class="watchlist-toggle">
+                <input type="checkbox" />
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3>The Batman</h3>
+            <p>
+              Batman investigates corruption in Gotham and confronts the
+              Riddler.
+            </p>
+          </div>
+        </div>
+
+        <!-- Movie Card 3 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_FMjpg_UX1000_.jpg"
+              alt="Avatar: The Way of Water"
+            />
+            <span class="duration">3h 12m</span>
+            <div class="hover-overlay">
+              <button class="watch-now">Watch Now</button>
+              <label class="watchlist-toggle">
+                <input type="checkbox" />
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3>Avatar: The Way of Water</h3>
+            <p>
+              Jake Sully and his family explore the oceans of Pandora while
+              facing new threats.
+            </p>
+          </div>
+        </div>
+
+        <!-- Movie Card 4 -->
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg"
+              alt="Doctor Strange in the Multiverse of Madness"
+            />
+            <span class="duration">2h 6m</span>
+            <div class="hover-overlay">
+              <button class="watch-now">Watch Now</button>
+              <label class="watchlist-toggle">
+                <input type="checkbox" />
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3>Doctor Strange 2</h3>
+            <p>
+              Doctor Strange travels through the multiverse to face a mysterious
+              new adversary.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Popular Shows Section -->
+    <section class="shows" id="shows">
+      <div class="section-header">
+        <h2>Popular Shows</h2>
+        <p>Series you'll love to binge</p>
+      </div>
+      <div class="show-cards">
+        <!-- Show Card 1 -->
+        <div class="show-card">
+          <div class="show-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQ2ODg5OWZiYmJkXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_FMjpg_UX1000_.jpg"
+              alt="The Mandalorian"
+            />
+            <div class="show-details">
+              <span class="genre">Sci-Fi/Action</span>
+              <span class="seasons">3 Seasons</span>
+            </div>
+            <button class="learn-more">Learn More</button>
+          </div>
+          <div class="show-info">
+            <h3>The Mandalorian</h3>
+            <p>
+              A lone bounty hunter travels through the outer reaches of the
+              galaxy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Show Card 2 -->
+        <div class="show-card">
+          <div class="show-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+              alt="Stranger Things"
+            />
+            <div class="show-details">
+              <span class="genre">Sci-Fi/Horror</span>
+              <span class="seasons">4 Seasons</span>
+            </div>
+            <button class="learn-more">Learn More</button>
+          </div>
+          <div class="show-info">
+            <h3>Stranger Things</h3>
+            <p>
+              A group of friends encounter supernatural forces and government
+              secrets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Show Card 3 -->
+        <div class="show-card">
+          <div class="show-poster">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg"
+              alt="Rick and Morty"
+            />
+            <div class="show-details">
+              <span class="genre">Animation/Comedy</span>
+              <span class="seasons">6 Seasons</span>
+            </div>
+            <button class="learn-more">Learn More</button>
+          </div>
+          <div class="show-info">
+            <h3>Rick and Morty</h3>
+            <p>
+              A genius scientist and his grandson go on interdimensional
+              adventures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. User Reviews Section -->
+    <section class="reviews" id="reviews">
+      <div class="section-header">
+        <h2>User Reviews</h2>
+        <p>What our viewers are saying</p>
+      </div>
+      <div class="reviews-container">
+        <div class="review-cards">
+          <!-- Review Card 1 -->
+          <div class="review-card">
+            <div class="reviewer-info">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="User Avatar"
+              />
+              <div>
+                <h4>Michael Johnson</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "Great streaming quality and an excellent recommendation system.
+              Always finds what I want to watch!"
+            </p>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div class="review-card">
+            <div class="reviewer-info">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="User Avatar"
+              />
+              <div>
+                <h4>Sarah Williams</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "I've discovered so many hidden gems through this platform. The
+              interface is simple and the content library is vast."
+            </p>
+          </div>
+        </div>
+
+        <div class="review-form">
+          <h3>Share Your Experience</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="rating">Rating</label>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star1"></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="review">Your Review</label>
+              <textarea
+                id="review"
+                rows="4"
+                placeholder="Share your thoughts"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit Review</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>NeoFlix</h2>
+          <p>Your streaming companion</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="#" target="_blank">About Us</a>
+            <a href="#" target="_blank">Contact</a>
+          </div>
+          <div class="link-group">
+            <h4>Legal</h4>
+            <a href="#" target="_blank">Terms of Use</a>
+            <a href="#" target="_blank">Privacy Policy</a>
+          </div>
+          <div class="link-group">
+            <h4>Connect</h4>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 NeoFlix. All rights reserved.</p>
+      </div>
+      <a href="#navbar" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+  </body>
+</html>
